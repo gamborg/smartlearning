@@ -6,11 +6,14 @@ namespace opgave2_1
     {
         static void Main(string[] args)
         {
-            var converter = new CurrencyService(7.45, 0);
+            var ratesService = new RateService();
+            var euRate = ratesService.GetRate("EUR");
+
+            var converter = new CurrencyService(euRate.Rate, 0);
             do
             {
-
                 Console.Clear();
+                Console.WriteLine(euRate);
                 Console.WriteLine("\tOmregning mellem kroner og euro");
                 Console.WriteLine("Valutavalg: Skriv 'DK' for Kroner eller 'EU' for Euro:\n");
                 var input = Console.ReadLine().ToUpper();
