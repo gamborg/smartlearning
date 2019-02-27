@@ -9,17 +9,17 @@ namespace opgave2_1
             var ratesService = new RateService();
             var euRate = ratesService.GetRate("EUR");
 
-            var converter = new CurrencyService(euRate.Rate, 0);
+            var converter = new CurrencyService(euRate.Rate);
             do
             {
                 Console.Clear();
                 Console.WriteLine(euRate);
                 Console.WriteLine("\tOmregning mellem kroner og euro");
-                Console.WriteLine("Valutavalg: Skriv 'DK' for Kroner eller 'EU' for Euro:\n");
+                Console.WriteLine("Valutavalg: Skriv 'DK' for Kroner til EUR eller 'EU' for Euro til DKK:\n");
                 var input = Console.ReadLine().ToUpper();
                 if (!(input == "DK" || input == "EU"))
                 {
-                    Console.WriteLine("Fortkert input, prøv igen.");
+                    Console.WriteLine("Forkert input, prøv igen.");
                     Console.WriteLine("Tryk på en vilkårlig tast for at prøve igen.");
                     Console.ReadLine();
                 }
