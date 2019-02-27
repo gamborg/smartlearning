@@ -1,0 +1,11 @@
+/Users/anders/Desktop/smartlearning/uge2/opgave2_3/obj/Debug/netcoreapp2.1/opgave2_3.csprojAssemblyReference.cache
+/Users/anders/Desktop/smartlearning/uge2/opgave2_3/obj/Debug/netcoreapp2.1/opgave2_3.csproj.CoreCompileInputs.cache
+/Users/anders/Desktop/smartlearning/uge2/opgave2_3/obj/Debug/netcoreapp2.1/opgave2_3.AssemblyInfoInputs.cache
+/Users/anders/Desktop/smartlearning/uge2/opgave2_3/obj/Debug/netcoreapp2.1/opgave2_3.AssemblyInfo.cs
+/Users/anders/Desktop/smartlearning/uge2/opgave2_3/bin/Debug/netcoreapp2.1/opgave2_3.deps.json
+/Users/anders/Desktop/smartlearning/uge2/opgave2_3/bin/Debug/netcoreapp2.1/opgave2_3.runtimeconfig.json
+/Users/anders/Desktop/smartlearning/uge2/opgave2_3/bin/Debug/netcoreapp2.1/opgave2_3.runtimeconfig.dev.json
+/Users/anders/Desktop/smartlearning/uge2/opgave2_3/bin/Debug/netcoreapp2.1/opgave2_3.dll
+/Users/anders/Desktop/smartlearning/uge2/opgave2_3/bin/Debug/netcoreapp2.1/opgave2_3.pdb
+/Users/anders/Desktop/smartlearning/uge2/opgave2_3/obj/Debug/netcoreapp2.1/opgave2_3.dll
+/Users/anders/Desktop/smartlearning/uge2/opgave2_3/obj/Debug/netcoreapp2.1/opgave2_3.pdb
