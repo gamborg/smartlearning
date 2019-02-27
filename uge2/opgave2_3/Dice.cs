@@ -23,7 +23,7 @@ namespace opgave2_3
             _numberOfSides = numberOfSides;
         }
 
-        public void ThrowDice() 
+        public void Roll() 
         {
             var random = new Random();
             _number = random.Next(1, _numberOfSides+1);

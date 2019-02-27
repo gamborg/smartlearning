@@ -14,7 +14,7 @@ namespace opgave2_3
             Console.Clear();
             do
             {
-                dice.ThrowDice();
+                dice.Roll();
                 current = dice.CurrentVisibleNumber;
                 var numberOfThrows = dice.NumberOfThrows;
 
