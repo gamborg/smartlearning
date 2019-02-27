@@ -1,0 +1,11 @@
+/Users/anders/Desktop/smartlearning/uge2/opgave2_5/obj/Debug/netcoreapp2.1/opgave2_5.csprojAssemblyReference.cache
+/Users/anders/Desktop/smartlearning/uge2/opgave2_5/obj/Debug/netcoreapp2.1/opgave2_5.csproj.CoreCompileInputs.cache
+/Users/anders/Desktop/smartlearning/uge2/opgave2_5/obj/Debug/netcoreapp2.1/opgave2_5.AssemblyInfoInputs.cache
+/Users/anders/Desktop/smartlearning/uge2/opgave2_5/obj/Debug/netcoreapp2.1/opgave2_5.AssemblyInfo.cs
+/Users/anders/Desktop/smartlearning/uge2/opgave2_5/bin/Debug/netcoreapp2.1/opgave2_5.deps.json
+/Users/anders/Desktop/smartlearning/uge2/opgave2_5/bin/Debug/netcoreapp2.1/opgave2_5.runtimeconfig.json
+/Users/anders/Desktop/smartlearning/uge2/opgave2_5/bin/Debug/netcoreapp2.1/opgave2_5.runtimeconfig.dev.json
+/Users/anders/Desktop/smartlearning/uge2/opgave2_5/bin/Debug/netcoreapp2.1/opgave2_5.dll
+/Users/anders/Desktop/smartlearning/uge2/opgave2_5/bin/Debug/netcoreapp2.1/opgave2_5.pdb
+/Users/anders/Desktop/smartlearning/uge2/opgave2_5/obj/Debug/netcoreapp2.1/opgave2_5.dll
+/Users/anders/Desktop/smartlearning/uge2/opgave2_5/obj/Debug/netcoreapp2.1/opgave2_5.pdb
