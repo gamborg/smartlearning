@@ -6,15 +6,14 @@ namespace opgave2_1
     {
         static void Main(string[] args)
         {
+            Console.Clear();
             var ratesService = new RateService();
             var euRate = ratesService.GetRate("EUR");
 
             var converter = new CurrencyService(euRate.Rate);
             do
             {
-                Console.Clear();
-                Console.WriteLine(euRate);
-                Console.WriteLine("\tOmregning mellem kroner og euro");
+                Console.WriteLine("Omregning mellem kroner og euro (" + converter.Rate + ")");
                 Console.WriteLine("Valutavalg: Skriv 'DK' for Kroner til EUR eller 'EU' for Euro til DKK:\n");
                 var input = Console.ReadLine().ToUpper();
                 if (!(input == "DK" || input == "EU"))
@@ -30,15 +29,16 @@ namespace opgave2_1
                     if (double.TryParse(inputAmount, out double amount))
                     {
                         converter.SetAmount(amount);
-                        
+
                         string symbol = "EUR";
-                        switch(input) {
+                        switch (input)
+                        {
                             case "DK": converter.Convert(); break;
                             case "EU": converter.Convert(false); symbol = "DKK"; break;
                         }
 
                         var convertet = converter.ConvertedAmount;
-                        
+
                         Console.WriteLine($"\n\n{ amount.ToString("F2") } { input } svarer til { convertet.ToString("F2") } { symbol } ");
                         Console.ReadLine();
                     }

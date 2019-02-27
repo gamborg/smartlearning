@@ -10,22 +10,22 @@ namespace opgave2_1
 
         public CurrencyService(double rate, double amount) 
         {
-            Rate = rate;
+            Rate = rate / 100;
             Amount = amount;
         }
 
         public CurrencyService(double rate)
         {
-            Rate = rate;
+            Rate = rate / 100;
         }
 
         public void SetAmount(double amount) 
         {
             Amount = amount;
         }
-        public double Convert(bool toOtherCurrency = true) 
+        public double Convert(bool toLocal = true) 
         {
-            if (toOtherCurrency) 
+            if (toLocal) 
             {
                 ConvertedAmount = Amount / Rate;
             }
