@@ -52,7 +52,7 @@ namespace opgave2_1
                 var rateCollectionModel = (ExchangeRates)serializer.Deserialize(xmlReader);
                 foreach (var cur in rateCollectionModel.DailyRates.Currencies)
                 {
-                    var rate = double.Parse(cur.Rate.Replace(",","."));
+                    var rate = double.Parse(cur.Rate);
                     Rates.Add(cur.Code, new RateModel { Rate = rate, Code = cur.Code, Desc = cur.Desc });
                 }
 
