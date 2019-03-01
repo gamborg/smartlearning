@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace opgave2_3
 {
@@ -9,16 +10,30 @@ namespace opgave2_3
             Console.WriteLine("Press enter to start rolling dice!");
             Console.ReadLine();
 
-            var dice = new Dice(1, 6);
+            var list = new List<Dice>();
+
+            for (var i = 1; i < 20; i++)
+            {
+                list.Add(new Dice(1, 6));
+            }
+
+            //var dice = new Dice(1, 6);
             int current = 0;
             Console.Clear();
             do
             {
-                dice.Roll();
-                current = dice.CurrentVisibleNumber;
-                var numberOfThrows = dice.NumberOfThrows;
-
-                Console.WriteLine($"Current throw was a {current}, and we have rolled the dice {numberOfThrows} times");
+                Console.Write("Current roll: ");
+                foreach (var dice in list)
+                {
+                    dice.Roll();
+                    Console.Write($"\t{dice.CurrentVisibleNumber}");
+                }
+                Console.WriteLine("");
+                //dice.Roll();
+                //current = dice.CurrentVisibleNumber;
+                //var numberOfThrows = dice.NumberOfThrows;
+                //Console.WriteLine($"Current throw was a {current}, and we have rolled the dice {numberOfThrows} times");
+                current++;
             } while (current != 6);
 
             Console.WriteLine("You got a 6");
