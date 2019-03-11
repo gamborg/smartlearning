@@ -1,0 +1,21 @@
+@model IEnumerable<ProductReview.Models.Review>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<a asp-controller="Review" asp-action="Add">Add review</a>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Product name</th>
+        <th>Rate</th>
+    </tr>
+    @foreach (var item in Model) {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.ProductName</td>
+            <td>@item.Rate</td>
+        </tr>
+    }
+</table>

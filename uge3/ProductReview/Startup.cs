@@ -7,8 +7,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ProductReview.Models;
+using ProductReview.Services;
 
 namespace ProductReview
 {
@@ -31,8 +34,14 @@ namespace ProductReview
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddScoped<IReviewService, ReviewService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            var connection = "Data Source=reviews.db";
+            services.AddDbContext<ReviewContext>(
+                options => options.UseSqlite(connection)
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
