@@ -4,9 +4,15 @@
         <div class="col-sm-2">
             <img src="@Model.Image" width="190" />
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-5">
             <span class="Caption">@Model.Caption</span>
             @Html.Raw(Model.Description)
+        </div>
+        <div class="col-sm-2">
+            @Model.Mileage km.
+        </div>
+        <div class="col-sm-1">
+           @Model.Year.Year 
         </div>
         <div class="col-sm-2">
             @Model.Price kr.
