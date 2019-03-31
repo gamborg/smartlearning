@@ -1,7 +1,7 @@
 ﻿@model List<DBA.Models.CarViewModel>
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Biler til salg";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+@await Component.InvokeAsync("CarList")

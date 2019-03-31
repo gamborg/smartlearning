@@ -1,0 +1,5 @@
+@model IEnumerable<DBA.Models.CarViewModel>
+
+@foreach (var car in Model) {
+    @await Html.PartialAsync("~/Views/Partials/Car.cshtml", car)
+}
