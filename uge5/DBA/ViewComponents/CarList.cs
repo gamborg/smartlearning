@@ -2,10 +2,10 @@ using DBA.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-namespace DBA.ViewComponents.CarListComponent
+namespace DBA.ViewComponents
 {
     [ViewComponent(Name = "CarList")]
-    public class CarListViewComponent : ViewComponent
+    public class CarList : ViewComponent
     {
         private readonly ICarService _carService;
         public CarListViewComponent(ICarService carService) 
