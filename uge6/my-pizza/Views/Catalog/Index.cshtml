@@ -1,0 +1,5 @@
+@model my_pizza.Models.Category
+
+<h1>@Model.Name</h1>
+
+@await Component.InvokeAsync("ProductList", @Model.Id)

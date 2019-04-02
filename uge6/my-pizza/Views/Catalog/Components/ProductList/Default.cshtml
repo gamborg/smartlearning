@@ -1,0 +1,6 @@
+@model IEnumerable<Product>
+
+@foreach (var product in Model)
+{
+    @await Component.InvokeAsync("Product", product)
+}
